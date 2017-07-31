@@ -1,0 +1,13 @@
+- repo: git@github.com:pre-commit/pre-commit-hooks
+  sha: master
+  hooks:
+  - id: check-merge-conflict
+  - id: detect-aws-credentials
+  - id: detect-private-key
+  - id: no-commit-to-branch
+    args: [--branch=master]
+
+- repo: git://github.com/detailyang/pre-commit-shell
+  sha: 1.0.1
+  hooks:
+  - id: shell-lint
