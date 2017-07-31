@@ -1,0 +1,6 @@
+- id: hadolint
+  name: Hadolint runner
+  description: Runs Hadolint to check for Dockerfile best practices
+  entry: run_hadolint.sh
+  language: script
+  files: (\.sh|\.zsh|\.ksh)$
